@@ -1,25 +1,31 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Drop Game</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water Game</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="game-wrapper">
-        <h1 class="game-title">Water Drop</h1>
-        <p class="game-tagline">Catch the good drops, avoid the bad ones!</p>
-        <div class="score-panel">
-            <div class="score">Score: <span id="score">0</span></div>
-            <div class="timer">Time: <span id="time">30</span>s</div>
-            <button id="start-btn">Start Game</button>
+  <div class="game-wrapper">
+    <header>
+      <img src="cw_logo-horizontal.png" alt="charity: water" class="logo" />
+      <div class="stats-bar">
+        <div class="score">SCORE <span id="score">0</span></div>
+        <div class="timer">TIMER <span id="time">60</span>s</div>
+        <div class="lives" id="lives">🚒️ 🚒️ 🚒️ 🚒️</div>
+      </div>
+    </header>
+
+    <div id="game-container">
+      <div id="start-overlay">
+        <div id="jerrycan">
+          <div id="water-fill"></div>
         </div>
-        
-        <div id="game-container">
-        </div>
+        <button id="start-btn">Start</button>
+      </div>
     </div>
-    
-    <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
